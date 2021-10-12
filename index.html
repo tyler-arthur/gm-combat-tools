@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM Comabt Tools</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <h1>GM Combat Tools</h1>
+    <section id="initiative">
+        <h2>Initiative-Tracker</h2>
+        <button id="start-intitiative-order">Create Initiative</button>
+        <div class="initiative-container">
+            <form id="new-initiative-form">
+                <input placeholder="Name" type="text" name="name" id="initiative-form-name" value=''>
+                <input type="number" name="bonus" id="initiative-form-bonus" min="-20" max="30" value="0">
+                <input type="submit" value="Create Combatant" id="initiative-form-submit">
+            </form>
+            <div id="initiative-field">
+                <!-- Combatants will generate here -->
+            </div>
+            <button id="start-initiative">Start Initiative</button>
+        </div>
+    </section>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
